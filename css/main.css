@@ -1,7 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 body, html{
 	background:#2c3e50;
 	padding:0;
 	margin:0;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .menu{
@@ -9,18 +12,10 @@ body, html{
 	margin:0 auto;
 	width:300px;
 	height:auto;
-  position:relative;
+   	position:relative;
   
 }
 
-.button{
-	background:#1abc9c;
-	margin:0 auto;
-	padding:0;
-	width:300px;
-	height:100px;
-  
-}
 
 .menu2{
 	background:#2ecc71;
@@ -39,17 +34,47 @@ body, html{
   
 }
 
-h6{
-	padding:10px;
-	margin:0;
-	font-family:Tahoma, Geneva, sans-serif;
+li {
+  list-style-type: none;
+  position: relative;
+  margin: 2px;
+  padding: 0.5em 0.5em 0.5em .5em;
+  background: lightgrey;
+  font-family: sans-serif;
 }
 
-p{
+li.done {
+  background: #CCFF99;
+}
+
+li.done::before {
+  content: '';
+  position: absolute;
+  border-color: #009933;
+  border-style: solid;
+  border-width: 0 0.3em 0.25em 0;
+  height: 1em;
+  top: 1.3em;
+  left: 0.6em;
+  margin-top: -1em;
+  transform: rotate(45deg);
+  width: 0.5em;
+}
+
+
+h6{
+	padding:20px;
+	margin:0;
+	color: white;
+	font-size: 14px;
+
+}
+
+h1{
+	font-size: 25px;
 	text-align:center; 
 	padding-top:40px; 
 	margin:0;
-	font-family:Tahoma, Geneva, sans-serif;
 	text-wrap:normal;
 	color:white;
 }

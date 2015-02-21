@@ -1,3 +1,5 @@
+
+
 //click me
 
 $(document).ready(function(){
@@ -10,3 +12,13 @@ $(document).ready(function(){
 
 // end click me
 
+// begin click to complete 
+
+var list = document.querySelector('ul');
+list.addEventListener('click', function(ev) {
+  if( ev.target.tagName === 'LI') {
+     ev.target.classList.toggle('done'); 
+  }
+}, false);
+
+// end click to complete
