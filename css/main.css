@@ -34,6 +34,10 @@ body, html{
   
 }
 
+ul.list-items {
+	
+}
+
 li {
   list-style-type: none;
   position: relative;
@@ -41,6 +45,7 @@ li {
   padding: 0.5em 0.5em 0.5em .5em;
   background: lightgrey;
   font-family: sans-serif;
+  cursor: pointer;
 }
 
 li.done {
