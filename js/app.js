@@ -15,7 +15,7 @@ $(document).ready(function(){
       $(this).toggleClass('done'); 
     });
 
-// end click to complete
+// begin add new item
 
 	$('.add-new-item').on('keyup', function(e){
 		if(e.keyCode === 13){
@@ -35,15 +35,11 @@ $(document).ready(function(){
 
 });
 
+// add new item variable function
 
 var addItem = function(){
 	var newItem = $('input.add-new-item').val();
     $('.list-items').prepend('<li>'+ newItem + '<button class="destroy">x</button>'+'</li>');
 }
 
-// end click me
 
-
-
-
-//remove method, when you click the x, do (this).remove
